@@ -1,0 +1,29 @@
+/*
+Theme Name: clara-2023
+Theme URI: https://github.com/LaaForet
+Author: Clara Champagne-Laforet
+Author URI: 
+Description: Développement d'un thème de base dans le cadre du cours 4w4
+Version: 1.0
+Requires at least: 6.0
+Tested up to: 6.1.1
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: clara-2023
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+    background-color: rgb(30, 50, 67);
+}
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+footer {
+    background-color: white;
+    height: 10vh;
+}
