@@ -9,5 +9,9 @@
 
 <body>
     <header>
+        <h3>- <?= bloginfo('name') ?></h3>
+        <h3>- <?= bloginfo('description') ?></h3>
+        <h3>- <?= bloginfo('url') ?></h3>
         <h1>TITRE PRINCIPAL</h1>
+        <h2><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?> - <?= bloginfo('description') ?></a></h2>
     </header>
