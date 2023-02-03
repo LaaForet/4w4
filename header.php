@@ -8,7 +8,11 @@
 </head>
 
 <body>
-    <header>
+    <header class="site__entete">
+        <?php wp_nav_menu(array(
+            'menu' => 'entete', 
+            'container' => 'nav'
+        )) ?>
         <h1>TITRE PRINCIPAL</h1>
         <h2><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?> - <?= bloginfo('description') ?></a></h2>
     </header>

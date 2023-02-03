@@ -380,6 +380,20 @@ a:hover {
 }
 
 /* --------------------------------------------- composant */
+.menu-entete-container .menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(84, 84, 84);
+  margin: 0;
+  padding: 1rem;
+}
+.menu-entete-container .menu a:hover, .menu-entete-container .menu a:visited, .menu-entete-container .menu a:link, .menu-entete-container .menu a:active {
+  text-decoration: none;
+}
+.menu-entete-container .menu li {
+  list-style: none;
+}
+
 .site__footer {
   display: flex;
   justify-content: space-between;

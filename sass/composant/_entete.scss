@@ -1,0 +1,19 @@
+
+
+.menu-entete-container .menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(84, 84, 84);
+    margin: 0;
+    padding: 1rem;
+
+    a:hover, a:visited, a:link, a:active
+    {
+        text-decoration: none;
+        
+    }
+
+    li {
+        list-style: none;
+    }
+}
