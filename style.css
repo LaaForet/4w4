@@ -369,4 +369,23 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-/* --------------------------------------------- composant *//*# sourceMappingURL=style.css.map */
+a {
+  color: #aaa;
+}
+a:visited {
+  color: rgb(249, 212, 212);
+}
+a:hover {
+  color: rgb(114, 114, 114);
+}
+
+/* --------------------------------------------- composant */
+.site__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.site__footer section {
+  border: 1px solid rgb(249, 205, 205);
+  flex: 1 1 200px;
+}/*# sourceMappingURL=style.css.map */
