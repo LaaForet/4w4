@@ -13,6 +13,6 @@
             'menu' => 'entete', 
             'container' => 'nav'
         )) ?>
-        <h1>TITRE PRINCIPAL</h1>
-        <h2><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?> - <?= bloginfo('description') ?></a></h2>
+        <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
+        <h2><?= bloginfo('description') ?></h2>
     </header>
