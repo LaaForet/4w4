@@ -1,5 +1,9 @@
 
 // ********************** MENU ***************************** //
+.menu-entete-container{
+    flex: 1;
+}
+
 .menu-entete-container .menu {
     display: flex;
     justify-content: space-around;
@@ -10,10 +14,20 @@
     a:hover, a:visited, a:link, a:active
     {
         text-decoration: none;
-        
+        padding: 1.5rem;
     }
 
     li {
         list-style: none;
+    }
+}
+
+.site__entete__nav{
+    display: flex;
+    justify-content: space-between;
+
+    img{
+        width: 3rem;
+        height: 3rem;
     }
 }
