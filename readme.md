@@ -16,3 +16,4 @@
 
 ### Rétrospective
 - Appris à travailler avec plusieurs branches
+- Apprris à utiliser word press localement
