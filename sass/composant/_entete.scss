@@ -2,33 +2,46 @@
 // ************************************************* MENU ***************************** //
 .menu-entete-container{
     flex: 1;
+    
 
 }
 
-.menu-entete-container .menu {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(84, 84, 84);
-    margin: 0;
-    padding: 1rem;
+.site__entete{
 
-    a:hover, a:visited, a:link, a:active
-    {
-        text-decoration: none;
-        padding: 1.5rem;
+    .site__entete__nav{
+        display: flex;
+        justify-content: space-between;
+    
+        img{
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .menu-entete-container .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(84, 84, 84);
+            margin: 0;
+            padding: 1rem;
+        
+            a:hover, a:visited, a:link, a:active
+            {
+                text-decoration: none;
+                padding: 1.5rem;
+            }
+        
+            li {
+                list-style: none;
+            }
+        }
     }
 
-    li {
-        list-style: none;
+    
+    h1,
+    h2 {
+        padding: 0 2rem;
     }
+
 }
 
-.site__entete__nav{
-    display: flex;
-    justify-content: space-between;
 
-    img{
-        width: 3rem;
-        height: 3rem;
-    }
-}
