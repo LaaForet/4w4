@@ -16,6 +16,9 @@
                 'container' => 'nav'
             )) ?>
         </section>
-        <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
-        <h2><?= bloginfo('description') ?></h2>
+        <section class="site__entete__titre">
+            <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
+            <h2><?= bloginfo('description') ?></h2>
+        </section>
+        
     </header>

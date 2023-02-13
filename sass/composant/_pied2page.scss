@@ -4,7 +4,11 @@
     flex-wrap: wrap;
 
     section {
-        border: 1px solid rgb(249, 205, 205);
+        border: 1px solid white;
         flex: 1 1 200px;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        height: 5rem;
+        background-color: rgb(249, 205, 205);
     }
 }

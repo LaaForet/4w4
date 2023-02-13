@@ -320,6 +320,32 @@ template {
   display: none;
 }
 
+/*
+ul,
+ol {
+
+}
+
+ul > li,
+ol > li {
+
+}
+
+// pre
+
+pre {}
+
+code{}
+
+i{}
+
+blockquote{}
+
+hr {}
+
+strong {}
+
+*/
 /* --------------------------------------------- base */
 h1 {
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
@@ -410,9 +436,10 @@ body main {
 .site__entete .site__entete__nav .menu-entete-container .menu li {
   list-style: none;
 }
-.site__entete h1,
-.site__entete h2 {
-  padding: 0 2rem;
+.site__entete .site__entete__titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site__footer {
@@ -421,6 +448,34 @@ body main {
   flex-wrap: wrap;
 }
 .site__footer section {
-  border: 1px solid rgb(249, 205, 205);
+  border: 1px solid white;
   flex: 1 1 200px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  height: 5rem;
+  background-color: rgb(249, 205, 205);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .blocflex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 2rem;
+  justify-content: center;
+}
+main .blocflex article {
+  width: 15rem;
+  background-color: rgb(240, 240, 240);
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .blocflex article p {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

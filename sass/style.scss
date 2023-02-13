@@ -14,6 +14,10 @@ Text Domain: clara-2023
 @import "variables/dimension";
 @import "normalize/normalize";
 // @import "normalize/box-sizing";
+@import "variables/root";
+@import "base/markdown";
+
+
 
 /* --------------------------------------------- base */
 @import "base/heading";
@@ -25,3 +29,4 @@ Text Domain: clara-2023
 /* --------------------------------------------- composant */
 @import "composant/entete";
 @import "composant/pied2page";
+@import "composant/bloc_flex";
