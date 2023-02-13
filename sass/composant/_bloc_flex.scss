@@ -12,7 +12,7 @@ main{
         justify-content: center;
     
         article{
-            width: 15rem;
+            width: 18rem;
             background-color: rgb(240, 240, 240);
             padding: 1rem;
             border-radius: 20px;
@@ -20,6 +20,7 @@ main{
             align-items: center;
             flex-direction: column;
     
+            h2,
             p{
                 text-align: center;
             }

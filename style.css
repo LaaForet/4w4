@@ -464,7 +464,7 @@ main .blocflex {
   justify-content: center;
 }
 main .blocflex article {
-  width: 15rem;
+  width: 18rem;
   background-color: rgb(240, 240, 240);
   padding: 1rem;
   border-radius: 20px;
@@ -472,6 +472,7 @@ main .blocflex article {
   align-items: center;
   flex-direction: column;
 }
+main .blocflex article h2,
 main .blocflex article p {
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
