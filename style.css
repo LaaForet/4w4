@@ -320,21 +320,22 @@ template {
   display: none;
 }
 
+li::marker {
+  color: rgb(249, 205, 205);
+}
+
+li > ul > li::marker {
+  content: "⯈ ";
+  font-size: 0.6rem;
+}
+
+pre {
+  background-color: rgb(240, 240, 240);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
 /*
-ul,
-ol {
-
-}
-
-ul > li,
-ol > li {
-
-}
-
-// pre
-
-pre {}
-
 code{}
 
 i{}
@@ -450,17 +451,12 @@ body main {
 .site__footer section {
   border: 1px solid white;
   flex: 1 1 200px;
-  margin-top: 1rem;
+  margin-top: 5rem;
   padding: 0.5rem;
   height: 5rem;
   background-color: rgb(249, 205, 205);
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 main .blocflex {
   display: flex;
   flex-wrap: wrap;

@@ -1,21 +1,25 @@
 // Les balises qu'on utilise dans la conversion des fichiers markdown
 
 // Listes
-/*
-ul,
-ol {
 
+li::marker {
+    color: rgb(249, 205, 205);
 }
 
-ul > li,
-ol > li {
-
+li>ul>li::marker{
+    content:"\2BC8  ";
+    font-size: 0.6rem;
 }
 
 // pre
 
-pre {}
+pre {
+    background-color: rgb(240, 240, 240);
+    padding: 1rem;
+    border-radius: 20px;
+}
 
+/*
 code{}
 
 i{}
