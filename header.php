@@ -15,6 +15,7 @@
                 'menu' => 'entete', 
                 'container' => 'nav'
             )) ?>
+            <?php get_search_form(); ?>
         </section>
         <section class="site__entete__titre">
             <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>

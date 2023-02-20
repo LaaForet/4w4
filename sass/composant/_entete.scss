@@ -15,6 +15,25 @@
             height: 3rem;
         }
 
+        .recherche {
+            background-color: rgb(84, 84, 84);
+            border-bottom: 7px solid rgb(249, 205, 205);
+
+            .recherche__input {
+                margin-top: 0.8rem;
+                background-color: rgb(84, 84, 84);
+                border-radius: 20px;
+                border: 1px solid rgb(249, 205, 205);
+                padding: 3px 5px;
+            }
+
+            .recherche__bouton {
+                margin-right: 1rem;
+                background-color: rgb(84, 84, 84);
+                border: 0;
+            }
+        }
+
         .menu-entete-container .menu {
             display: flex;
             justify-content: space-around;
