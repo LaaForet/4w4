@@ -11,6 +11,8 @@
     <header class="site__entete">
         <section class="site__entete__nav">
             <?php the_custom_logo() ?>
+            <input type="checkbox" id="cc-menu" checked>
+            <label class="logo-menu" for="cc-menu">&#9776;</label>
             <?php wp_nav_menu(array(
                 'menu' => 'entete', 
                 'container' => 'nav'

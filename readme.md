@@ -15,5 +15,5 @@
 - Site Site Ground : https://cidweb1.sg-host.com/
 
 ### Rétrospective
-- Appris à travailler avec plusieurs branches
-- Apprris à utiliser word press localement
+- Appris à importer des fichiers markdown
+- Appris à utiliser correctement la base de donnée (faire le ménage)
