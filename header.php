@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body class="site">
     <header class="site__entete">
         <section class="site__entete__nav">
             <?php the_custom_logo() ?>
@@ -25,3 +25,10 @@
         </section>
         
     </header>
+    <aside class="site__aside">
+        <h3>Menu secondaire</h3>
+        <?php wp_nav_menu(array(
+            "menu" => "aside",
+            "container" => "nav"
+        )); ?>
+    </aside>
