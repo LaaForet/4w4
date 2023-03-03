@@ -7,21 +7,23 @@
     <h3>front-page.php</h3>
     <section class="blocflex">
         <?php
-        // ":" + "endif" remplacent "{}"
-        if (have_posts()) :
-            while (have_posts()) : the_post(); ?>
-                <article>
-                    <h2>
-                        <a href='<?php echo get_permalink(); ?>'><?= get_the_title(); ?></a>
-                    </h2>
-                    <?php // the_content(); //(affiche l'article au complet?> 
-                    <?php //the_excerpt(); //affiche un résumé de l'article?>
-                    <p><?= wp_trim_words(get_the_excerpt(), 10, " &#10148;") ?></p>
-                </article>
-            <?php endwhile;
-        endif;
+            // ":" + "endif" remplacent "{}"
+            if (have_posts()) :
+                while (have_posts()) : the_post(); 
+                
+                    $la_categorie = 'notes';
+                    if(is_category('galerie')) {
+                        $la_categorie = 'galerie';
+                    };
+
+                    get_template_part('template-parts/categorie', $la_categorie);
+
+                endwhile;
+                
+            endif;
         ?>
     </section>
     
 </main>
+
 <?php get_footer(); ?>
