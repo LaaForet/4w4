@@ -600,6 +600,19 @@ body main {
 }
 
 */
+.site__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.site__footer section {
+  flex: 1 1 200px;
+  margin-top: 5rem;
+  padding: 0.5rem;
+  height: 5rem;
+  background-color: #fff5db;
+}
+
 /* --------------------------------------------- layout */
 .site__aside {
   grid-area: aside;
