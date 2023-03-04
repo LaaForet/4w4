@@ -1,47 +1,11 @@
-// Mise en page générale avec display: grid
 
+.site__aside {
+  grid-area: aside;
+  border-top: 1px solid #fff5db;
+  border-radius: 100px;
 
-.site__entete {
-    grid-area: header;
-    // padding: 1rem clamp(1rem, 3vw, 20rem);
+  @media (min-width: 1000px) {
     background-color: white;
+    border-radius: 0 100px 0 0;
   }
-  
-  .site__main {
-    grid-area: main;
-    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  }
-  
-  .site__footer {
-    grid-area: footer;
-    background-color: white;
-  }
-
-  .site__aside {
-    grid-area: aside;
-    background-color: rgb(240, 240, 240);
-  }
-
-  .site {
-    display: grid;
-    grid-template-columns: 12rem auto;
-    grid-template-rows: 5rem auto 5rem;
-    grid-template-areas:
-      "header"
-      "aside"
-      "main"
-      "footer";
-    // row-gap: 50px;
-
-    @media (min-width: 1000px) {
-        grid-template-columns: 20% auto;
-        grid-template-areas:
-        "header header"
-        "aside main"
-        "footer footer";
-    
-    }
-
-  }
-
-  
+}

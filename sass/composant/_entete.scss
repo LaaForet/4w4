@@ -9,13 +9,12 @@
     $coul-jaune: #fff5db;
     $coul-bleue: #a1d0d9;
     $coul-degrade: linear-gradient(#a1d0d9, #fff5db);
-    border: 1px solid red;
 
     .site__entete__nav {
         display: flex;
         justify-content: space-between;
         background-color: $coul-jaune;
-        border-bottom: 10px solid $coul-bleue;
+        border-bottom: 15px solid $coul-bleue;
 
         img {
             width: 3rem;
@@ -44,14 +43,15 @@
                     position: absolute;
                     background-color: $coul-bleue;
                     width: 100%;
-                    height: 20%;
+                    height: 30%;
                     top: 115%;
                     left: 0;
+                    border-radius: 8px 8px 0 0;
                     transition: 0.5s;
                 }
 
                 a:hover::before {
-                    transform: translateY(-5px);
+                    transform: translateY(-8px);
                 }
         
                 li {

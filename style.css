@@ -388,19 +388,25 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+body {
+  background: linear-gradient(#a1d0d9, #fff5db);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body main {
+  padding: 0 2rem;
+}
+
 /* --------------------------------------------- composant */
 #cc-menu, .logo-menu {
   display: none;
 }
 
-.site__entete {
-  border: 1px solid red;
-}
 .site__entete .site__entete__nav {
   display: flex;
   justify-content: space-between;
   background-color: #fff5db;
-  border-bottom: 10px solid #a1d0d9;
+  border-bottom: 15px solid #a1d0d9;
 }
 .site__entete .site__entete__nav img {
   width: 3rem;
@@ -427,13 +433,14 @@ p {
   position: absolute;
   background-color: #a1d0d9;
   width: 100%;
-  height: 20%;
+  height: 30%;
   top: 115%;
   left: 0;
+  border-radius: 8px 8px 0 0;
   transition: 0.5s;
 }
 .site__entete .site__entete__nav .menu-entete-container .menu a:hover::before {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 .site__entete .site__entete__nav .menu-entete-container .menu li {
   list-style: none;
@@ -593,4 +600,47 @@ p {
 }
 
 */
-/* --------------------------------------------- layout *//*# sourceMappingURL=style.css.map */
+/* --------------------------------------------- layout */
+.site__aside {
+  grid-area: aside;
+  border-top: 1px solid #fff5db;
+  border-radius: 100px;
+}
+@media (min-width: 1000px) {
+  .site__aside {
+    background-color: white;
+    border-radius: 0 100px 0 0;
+  }
+}
+
+.site__entete {
+  grid-area: entete;
+}
+
+.site__aside {
+  grid-area: aside;
+}
+
+.site__main {
+  grid-area: main;
+}
+
+.site__footer {
+  grid-area: footer;
+}
+
+.site {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30vh 15vh auto 5vh;
+  grid-template-areas: "entete entete" "aside aside" "main main" "footer footer";
+}
+@media (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-rows: 30vh auto auto 5vh;
+    grid-template-areas: "entete entete" "aside main" "aside main" "footer footer";
+  }
+}/*# sourceMappingURL=style.css.map */

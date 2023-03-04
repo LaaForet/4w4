@@ -1,0 +1,40 @@
+// Mise en page générale avec display: grid
+
+.site__entete {
+    grid-area: entete;
+  }
+  
+.site__aside {
+    grid-area: aside;
+}
+  
+.site__main {
+    grid-area: main;
+}
+  
+.site__footer {
+    grid-area: footer;
+}
+  
+.site {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh 15vh auto 5vh;
+    grid-template-areas: 
+        "entete entete"
+        "aside aside"
+        "main main"
+        "footer footer";
+
+        @media (min-width: 1000px) {
+            grid-template-columns: 20% auto;
+            grid-template-rows: 30vh auto auto 5vh;
+            grid-template-areas:
+            "entete entete"
+            "aside main"
+            "aside main"
+            "footer footer";
+        }
+}

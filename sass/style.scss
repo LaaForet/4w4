@@ -24,7 +24,7 @@ Text Domain: clara-2023
 // @import "base/espacement";
 //@import "base/link";
 // @import "base/list";
-//@import "base/body";
+@import "base/body";
 
 /* --------------------------------------------- composant */
 @import "composant/entete";
@@ -32,4 +32,5 @@ Text Domain: clara-2023
 //@import "composant/bloc_flex";
 
 /* --------------------------------------------- layout */
-//@import "layout/aside-contenu";
+ @import "layout/aside-contenu";
+ @import "layout/layout-general";
