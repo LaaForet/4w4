@@ -22,14 +22,14 @@ Text Domain: clara-2023
 /* --------------------------------------------- base */
 @import "base/heading";
 // @import "base/espacement";
-@import "base/link";
+//@import "base/link";
 // @import "base/list";
-@import "base/body";
+//@import "base/body";
 
 /* --------------------------------------------- composant */
 @import "composant/entete";
-@import "composant/pied2page";
-@import "composant/bloc_flex";
+//@import "composant/pied2page";
+//@import "composant/bloc_flex";
 
 /* --------------------------------------------- layout */
-@import "layout/aside-contenu";
+//@import "layout/aside-contenu";

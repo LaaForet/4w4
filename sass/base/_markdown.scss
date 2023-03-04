@@ -1,6 +1,5 @@
 // Les balises qu'on utilise dans la conversion des fichiers markdown
 
-// Listes
 
 li::marker {
     color: rgb(249, 205, 205);
@@ -11,8 +10,6 @@ li>ul>li::marker{
     font-size: 0.6rem;
 }
 
-// pre
-
 pre {
     background-color: rgb(240, 240, 240);
     padding: 1rem;
@@ -22,16 +19,3 @@ pre {
 button.copy-the-code-button {
     background-color: red;
 }
-
-/*
-code{}
-
-i{}
-
-blockquote{}
-
-hr {}
-
-strong {}
-
-*/
