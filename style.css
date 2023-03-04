@@ -388,6 +388,16 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+a {
+  color: #a1d0d9;
+}
+a:visited {
+  color: rgb(133, 133, 133);
+}
+a:hover {
+  color: #b1d6dd;
+}
+
 body {
   background: linear-gradient(#a1d0d9, #fff5db);
   background-repeat: no-repeat;
@@ -613,6 +623,41 @@ body main {
   background-color: #fff5db;
 }
 
+main .blocflex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 2rem;
+  justify-content: center;
+}
+main .blocflex article {
+  width: 18rem;
+  background-color: white;
+  box-shadow: rgba(121, 158, 165, 0.6823529412) 0px 5px 15px;
+  padding: 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .blocflex article h2,
+main .blocflex article p {
+  text-align: center;
+}
+
+/*.blocflex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    // Cette déclaration sera meilleur quand min() sera mieux supporté
+    // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+    gap: 2rem;
+    margin: 2rem;
+
+    article {
+      border: 1px solid #aaa;
+      padding: 1rem;
+    }
+  }
+*/
 /* --------------------------------------------- layout */
 .site__aside {
   grid-area: aside;
