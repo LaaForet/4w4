@@ -21,6 +21,17 @@
     }
     add_action( 'after_setup_theme', 'enregistrement_nav_menu', 0 );
 
+    // ******************   Modification des choix des menus "cours..." *********************************
+    function perso_menu_item_title($title, $item, $args, $depth) {
+        // Remplacer 'cours' par l'identifiant de votre menu
+        if($args->theme_location == 'coursa1' || 'coursa2' || 'coursa3') {
+            // Modifier la longueur du titre en fonction de vos besoins
+            $title = wp_trim_words($title, 3, ' ... '); // On garde 3 mots pours le titre du choix
+        }
+        return $title;
+    }
+    add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 4);
+
     // add_theme_support()
     add_theme_support(  'title-tag');
     add_theme_support(  'custom-logo', array(

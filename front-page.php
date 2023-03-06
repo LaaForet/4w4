@@ -12,7 +12,7 @@
                 while (have_posts()) : the_post(); 
                 
                     $la_categorie = 'notes';
-                    if(is_category('galerie')) {
+                    if(in_category('galerie')) {
                         $la_categorie = 'galerie';
                     };
 
