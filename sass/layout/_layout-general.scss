@@ -38,3 +38,9 @@
             "footer footer";
         }
 }
+
+.no-aside {
+    @media (min-width: 1000px) {
+        grid-template-columns: auto;
+    }
+}

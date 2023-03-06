@@ -709,4 +709,10 @@ main .blocflex article p {
     grid-template-rows: 30vh auto auto 5vh;
     grid-template-areas: "entete entete" "aside main" "aside main" "footer footer";
   }
+}
+
+@media (min-width: 1000px) {
+  .no-aside {
+    grid-template-columns: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
