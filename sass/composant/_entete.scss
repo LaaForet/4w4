@@ -10,20 +10,24 @@
     $coul-bleue: #a1d0d9;
     $coul-degrade: linear-gradient(#a1d0d9, #fff5db);
 
+
     .site__entete__nav {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: 
+            "logo menu"
+            "recherche recherche";
         background-color: $coul-jaune;
-        border-bottom: 15px solid $coul-bleue;
+        
 
         img {
+            grid-area: logo;
             width: 3rem;
             height: 3rem;
         }
 
         .menu-entete-container {
-            flex: 1;
-
+            grid-area: menu;
             .menu  {
                 display: flex;
                 justify-content: space-around;
@@ -38,34 +42,38 @@
                     position: relative;
                 }
 
-                a::before {
-                    content: '';
-                    position: absolute;
-                    background-color: $coul-bleue;
-                    width: 100%;
-                    height: 30%;
-                    top: 115%;
-                    left: 0;
-                    border-radius: 8px 8px 0 0;
-                    transition: 0.5s;
-                }
-
-                a:hover::before {
-                    transform: translateY(-8px);
-                }
-        
                 li {
                     list-style: none;
                 }
 
+                @media (min-width: 920px) {
+                    
+                    a::before {
+                        content: '';
+                        position: absolute;
+                        background-color: $coul-bleue;
+                        width: 100%;
+                        height: 10px;
+                        top: 120%;
+                        left: 0;
+                        border-radius: 8px 8px 0 0;
+                        transition: 0.5s;
+                    }
+    
+                    a:hover::before {
+                        transform: translateY(-8px);
+                    }
+                }
             }
+
         }
 
         .recherche {
+            grid-area: recherche;
             display: flex;
             align-items: center;
             width: 15rem;
-            padding-right: 1rem;
+            padding: 0 0.5rem;
 
             label {
                 border: 2px solid $coul-bleue;
@@ -125,12 +133,27 @@
                 }
             }
         }
+
+        @media (min-width: 920px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            border-bottom: 15px solid $coul-bleue;
+
+            .menu-entete-container {
+                flex: 1;
+            }
+        }
     }
 
     .site__entete__titre {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: $coul-jaune;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
         
         h1, h2 {
             margin: 1rem 0 0 0;

@@ -1,11 +1,32 @@
 
 .site__aside {
   grid-area: aside;
-  border-top: 1px solid #fff5db;
-  border-radius: 100px;
+  // border-top: 1px solid #fff5db;
+  background: linear-gradient(#fff5db, transparent);
+  border-radius: 100px 100px 0 0;
+  padding: 1rem;
+  text-align: center;
+  
 
-  @media (min-width: 1000px) {
-    background-color: white;
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    column-count: 2;
+
+    .menu-item {
+      text-decoration: none;
+      padding: 0.5rem;
+      white-space: nowrap;
+    }
+  }
+
+  @media (min-width: 920px) {
+    background: white;
     border-radius: 0 100px 0 0;
+    text-align: left;
+
+    .menu {
+      column-count: 1;
+    }
   }
 }
