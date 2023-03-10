@@ -4,7 +4,7 @@
 <?php get_header(); ?>
 
 <main>
-    <h3>front-page.php</h3>
+    <!-- <h3>front-page.php</h3> -->
     <section class="blocflex">
         <?php
             // ":" + "endif" remplacent "{}"

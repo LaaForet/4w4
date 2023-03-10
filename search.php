@@ -3,7 +3,7 @@
 ?>
 <?php get_header(); ?>
 <main>
-<h3>search.php</h3>
+<!-- <h3>search.php</h3> -->
 <h3>Résultat de la recherche</h3>
     <?php
     // ":" + "endif" remplacent "{}"

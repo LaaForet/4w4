@@ -2,7 +2,7 @@
 
 
 li::marker {
-    color: rgb(249, 205, 205);
+    color: white;
 }
 
 li>ul>li::marker{
@@ -10,12 +10,18 @@ li>ul>li::marker{
     font-size: 0.6rem;
 }
 
-pre {
-    background-color: rgb(240, 240, 240);
-    padding: 1rem;
-    border-radius: 20px;
+.copy-the-code-wrap {
+    width: 72vw;
+    margin: 1rem;
 }
 
-button.copy-the-code-button {
-    background-color: red;
+pre {
+    
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    overflow-x: scroll;
+    overflow-y: auto;
 }
+
+

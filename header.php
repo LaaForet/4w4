@@ -17,7 +17,8 @@
             <?php wp_nav_menu(array(
                 'menu' => 'entete', 
                 'container' => 'nav'
-            )) ?>
+                ))
+            ?>
             <?php get_search_form(); ?>
         </section>
         <section class="site__entete__titre">

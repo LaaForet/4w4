@@ -3,7 +3,7 @@
 ?>
 <?php get_header(); ?>
 <main>
-<h3>single.php</h3>
+<!-- <h3>single.php</h3> -->
     <?php
     // ":" + "endif" remplacent "{}"
     if (have_posts()) :
