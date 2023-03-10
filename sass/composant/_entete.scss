@@ -60,6 +60,71 @@
 
             }
         }
+
+        .recherche {
+            display: flex;
+            align-items: center;
+            width: 15rem;
+            padding-right: 1rem;
+
+            label {
+                border: 2px solid $coul-bleue;
+                border-radius: 50px;
+                height: 1.5rem;
+                width: 1.5rem;
+                padding: 3.5px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                transition: width 0.3s ease-in-out;
+                overflow: hidden;
+
+                .recherche__input {
+                    flex-grow: 1;
+                    border: 0;
+                    padding: 1rem;
+                    background-color: transparent;
+                    color: rgb(133, 133, 133);
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    opacity: 0;
+                    cursor: pointer;
+
+                    &:focus {
+                        outline: 0;
+                    }
+                }
+
+                .recherche__bouton {
+                    cursor: pointer;
+                    border: 0;
+                    background-color: transparent;
+                    color: $coul-bleue;
+                    border-radius: 50%;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    font-size: 0.8rem;
+                    margin-left: auto;
+                    transition: 0.1s ease-in-out
+                }
+
+                &:focus-within {
+                    width: 100%;
+
+                    .recherche__input {
+                        opacity: 1;
+                        cursor: initial;
+                    }
+
+                    .recherche__bouton {
+                        background-color: $coul-bleue;
+                        color: $coul-jaune;
+                    }
+                }
+            }
+        }
     }
 
     .site__entete__titre {

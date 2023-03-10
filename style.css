@@ -455,6 +455,63 @@ body main {
 .site__entete .site__entete__nav .menu-entete-container .menu li {
   list-style: none;
 }
+.site__entete .site__entete__nav .recherche {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  padding-right: 1rem;
+}
+.site__entete .site__entete__nav .recherche label {
+  border: 2px solid #a1d0d9;
+  border-radius: 50px;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 3.5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+}
+.site__entete .site__entete__nav .recherche label .recherche__input {
+  flex-grow: 1;
+  border: 0;
+  padding: 1rem;
+  background-color: transparent;
+  color: rgb(133, 133, 133);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.site__entete .site__entete__nav .recherche label .recherche__input:focus {
+  outline: 0;
+}
+.site__entete .site__entete__nav .recherche label .recherche__bouton {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  color: #a1d0d9;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.8rem;
+  margin-left: auto;
+  transition: 0.1s ease-in-out;
+}
+.site__entete .site__entete__nav .recherche label:focus-within {
+  width: 100%;
+}
+.site__entete .site__entete__nav .recherche label:focus-within .recherche__input {
+  opacity: 1;
+  cursor: initial;
+}
+.site__entete .site__entete__nav .recherche label:focus-within .recherche__bouton {
+  background-color: #a1d0d9;
+  color: #fff5db;
+}
 .site__entete .site__entete__titre {
   display: flex;
   flex-direction: column;
