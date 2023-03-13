@@ -26,7 +26,10 @@
         // Remplacer 'cours' par l'identifiant de votre menu
         if($args->menu == 'coursa1' || 'coursa2' || 'coursa3') {
             // Modifier la longueur du titre en fonction de vos besoins
-            $title = wp_trim_words($title, 3, ' ... '); // On garde 3 mots pours le titre du choix
+            //$sigle = substr($title, 0, 7);
+            //$tite = substr($title, 7);
+            //$title = "<code>" .$sigle . "</code>" . "<p>" .  wp_trim_words($title, 4, ' ... ') . "</p>";
+            $title = wp_trim_words($title, 4, ' ... '); // On garde 3 mots pours le titre du choix
         }
         return $title;
     }

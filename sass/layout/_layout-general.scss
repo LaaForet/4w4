@@ -30,7 +30,7 @@
         "main main"
         "footer footer";
 
-        @media (min-width: 920px) {
+        @media (min-width: $largeur__bureau) {
             grid-template-columns: auto auto;
             grid-template-rows: auto auto auto 5vh;
             grid-template-areas:
@@ -42,7 +42,7 @@
 }
 
 .no-aside {
-    @media (min-width: 920px) {
+    @media (min-width: $largeur__bureau) {
         grid-template-columns: auto;
     }
 }

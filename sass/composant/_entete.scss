@@ -6,9 +6,6 @@
 }
 
 .site__entete {
-    $coul-jaune: #fff5db;
-    $coul-bleue: #a1d0d9;
-    $coul-degrade: linear-gradient(#a1d0d9, #fff5db);
 
 
     .site__entete__nav {
@@ -46,7 +43,7 @@
                     list-style: none;
                 }
 
-                @media (min-width: 920px) {
+                @media (min-width: $largeur__bureau) {
                     
                     a::before {
                         content: '';
@@ -134,7 +131,7 @@
             }
         }
 
-        @media (min-width: 920px) {
+        @media (min-width: $largeur__bureau) {
             display: flex;
             justify-content: space-between;
             align-items: center;
