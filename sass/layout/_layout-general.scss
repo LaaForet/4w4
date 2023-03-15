@@ -1,9 +1,7 @@
 // Mise en page générale avec display: grid
 
 .site__entete {
-
     grid-area: entete;
-
 }
   
 .site__aside {
@@ -43,6 +41,11 @@
 
 .no-aside {
     @media (min-width: $largeur__bureau) {
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "entete"
+            "main"
+            "main"
+            "footer";
     }
 }

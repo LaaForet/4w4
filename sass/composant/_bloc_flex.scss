@@ -5,6 +5,7 @@ main{
     // flex-direction: column;
     // align-items: center;
 
+
     .blocflex{
         display: flex;
         flex-wrap: wrap;
@@ -20,10 +21,20 @@ main{
             display: flex;
             align-items: center;
             flex-direction: column;
-    
+
             h2,
             p{
                 text-align: center;
+            }
+        }
+
+        .blocFlex__galerie {
+            width: 100%;
+            background-color: transparent;
+            box-shadow: none;
+
+            img {
+                border-radius: 20px;
             }
         }
     }

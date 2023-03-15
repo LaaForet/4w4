@@ -691,6 +691,14 @@ main .blocflex article h2,
 main .blocflex article p {
   text-align: center;
 }
+main .blocflex .blocFlex__galerie {
+  width: 100%;
+  background-color: transparent;
+  box-shadow: none;
+}
+main .blocflex .blocFlex__galerie img {
+  border-radius: 20px;
+}
 
 /*.blocflex {
     display: grid;
@@ -787,6 +795,7 @@ main .blocflex article p {
 
 @media (min-width: 1080px) {
   .no-aside {
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "entete" "main" "main" "footer";
   }
 }/*# sourceMappingURL=style.css.map */
