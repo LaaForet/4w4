@@ -1,14 +1,91 @@
 .site__footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    background-color: $coul-jaune;
+    padding: 1rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 0 auto;
+    grid-template-areas: 
+        "logo liens"
+        "logo medias";
 
     section {
-        // border: 1px solid #a1d0d9;
-        flex: 1 1 200px;
-        margin-top: 5rem;
-        padding: 0.5rem;
-        height: 5rem;
-        background-color: $coul-jaune;
+        text-align: center;
+
+        @media (min-width: $largeur__tablette) {
+            text-align: left; 
+        }
+
+        @media (min-width: $largeur__bureau) {
+
+            h2 {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .site__footer__logo {
+
+        img {
+            grid-area: logo;
+            display: none;
+
+            @media (min-width: $largeur__tablette) {
+                grid-area: logo;
+                display: block;
+                width: 4rem;
+                height: 4rem;
+                padding: 1rem;
+            }
+        }
+    }
+
+    .site__footer__nav {
+        grid-area: liens;
+
+        ul {
+
+            padding: 0;
+
+            li {
+                list-style: none;
+                line-height: 1.5rem;
+
+                a:hover, a:visited, a:link, a:active {
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+
+    .site__footer__medias {
+        grid-area: medias;
+        
+        i {
+            color: $coul-bleue;
+            cursor: pointer;
+            padding: 0.5rem;
+            transition: 0.3s;
+
+            @media (min-width: $largeur__tablette) {
+                font-size: 1.3rem;
+            }
+        }
+
+        i:hover {
+            color: $coul-bleu-fonce;
+        }
+
+        @media (min-width: $largeur__tablette) {
+            h2 {
+                padding-left: 0.5rem;
+            }
+        }
+    }
+
+    @media (min-width: $largeur__tablette) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo liens medias";
     }
 }

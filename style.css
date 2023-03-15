@@ -596,16 +596,79 @@ body main {
   }
 }
 .site__footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  background-color: #fff5db;
+  padding: 1rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 0 auto;
+  grid-template-areas: "logo liens" "logo medias";
 }
 .site__footer section {
-  flex: 1 1 200px;
-  margin-top: 5rem;
+  text-align: center;
+}
+@media (min-width: 820px) {
+  .site__footer section {
+    text-align: left;
+  }
+}
+@media (min-width: 1080px) {
+  .site__footer section h2 {
+    font-size: 0.9rem;
+  }
+}
+.site__footer .site__footer__logo img {
+  grid-area: logo;
+  display: none;
+}
+@media (min-width: 820px) {
+  .site__footer .site__footer__logo img {
+    grid-area: logo;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+  }
+}
+.site__footer .site__footer__nav {
+  grid-area: liens;
+}
+.site__footer .site__footer__nav ul {
+  padding: 0;
+}
+.site__footer .site__footer__nav ul li {
+  list-style: none;
+  line-height: 1.5rem;
+}
+.site__footer .site__footer__nav ul li a:hover, .site__footer .site__footer__nav ul li a:visited, .site__footer .site__footer__nav ul li a:link, .site__footer .site__footer__nav ul li a:active {
+  text-decoration: none;
+}
+.site__footer .site__footer__medias {
+  grid-area: medias;
+}
+.site__footer .site__footer__medias i {
+  color: #a1d0d9;
+  cursor: pointer;
   padding: 0.5rem;
-  height: 5rem;
-  background-color: #fff5db;
+  transition: 0.3s;
+}
+@media (min-width: 820px) {
+  .site__footer .site__footer__medias i {
+    font-size: 1.3rem;
+  }
+}
+.site__footer .site__footer__medias i:hover {
+  color: #7ca2a9;
+}
+@media (min-width: 820px) {
+  .site__footer .site__footer__medias h2 {
+    padding-left: 0.5rem;
+  }
+}
+@media (min-width: 820px) {
+  .site__footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "logo liens medias";
+  }
 }
 
 main .blocflex {
@@ -681,7 +744,7 @@ main .blocflex article p {
 }
 @media (min-width: 1080px) {
   .site__aside {
-    background: white;
+    background: linear-gradient(white 80%, transparent);
     border-radius: 0 100px 0 0;
     text-align: left;
   }
@@ -711,13 +774,13 @@ main .blocflex article p {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto 5vh;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas: "entete entete" "aside aside" "main main" "footer footer";
 }
 @media (min-width: 1080px) {
   .site {
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto 5vh;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: "entete entete" "aside main" "aside main" "footer footer";
   }
 }

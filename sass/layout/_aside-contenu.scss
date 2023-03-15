@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $largeur__bureau) {
-    background: white;
+    background: linear-gradient(white 80%, transparent);
     border-radius: 0 100px 0 0;
     text-align: left;
 
