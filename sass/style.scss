@@ -15,11 +15,9 @@ Text Domain: clara-2023
 @import "variables/couleurs";
 @import "normalize/normalize";
 
-// @import "normalize/box-sizing";
+@import "normalize/box-sizing";
 @import "variables/root";
 @import "base/markdown";
-
-
 
 /* --------------------------------------------- base */
 @import "base/heading";

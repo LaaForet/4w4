@@ -1,4 +1,5 @@
 <aside class="site__aside">
+
     <h3>Menu secondaire</h3>
     <?php
         $ma_categorie = "notes";
@@ -16,4 +17,5 @@
             "container" => "nav"
         ));
     ?>
+    
 </aside>

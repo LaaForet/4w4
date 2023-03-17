@@ -2,8 +2,10 @@
 // Modèle par défaut 
 ?>
 <?php get_header(); ?>
+
 <main>
 <!-- <h3>index.php</h3> -->
+
     <?php
     // ":" + "endif" remplacent "{}"
     if (have_posts()) :
@@ -14,5 +16,7 @@
         <?php endwhile;
     endif;
     ?>
+
 </main>
+
 <?php get_footer(); ?>

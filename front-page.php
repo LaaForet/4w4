@@ -5,6 +5,7 @@
 
 <main>
     <!-- <h3>front-page.php</h3> -->
+    
     <section class="blocflex">
         <?php
             // ":" + "endif" remplacent "{}"

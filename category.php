@@ -5,6 +5,7 @@
 
 <main class="site__main">
     <!-- <h3>category.php</h3> -->
+
     <section class="blocflex">
       <?php
       $category = get_queried_object();
@@ -21,7 +22,7 @@
       <?php endif;
       wp_reset_postdata();?>
    </section>
+   
 </main>
-
 
 <?php get_footer(); ?>

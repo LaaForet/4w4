@@ -460,6 +460,7 @@ body main {
   position: absolute;
   top: 0;
   left: -1rem;
+  z-index: 100;
 }
 .site__entete .site__entete__nav .menu-entete-container .menu a:hover, .site__entete .site__entete__nav .menu-entete-container .menu a:visited, .site__entete .site__entete__nav .menu-entete-container .menu a:link, .site__entete .site__entete__nav .menu-entete-container .menu a:active {
   text-decoration: none;
@@ -713,20 +714,6 @@ main .blocflex .blocFlex__galerie img {
   border-radius: 20px;
 }
 
-/*.blocflex {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    // Cette déclaration sera meilleur quand min() sera mieux supporté
-    // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
-    gap: 2rem;
-    margin: 2rem;
-
-    article {
-      border: 1px solid #aaa;
-      padding: 1rem;
-    }
-  }
-*/
 .menu-cours-container .menu {
   display: flex;
   flex-direction: column;

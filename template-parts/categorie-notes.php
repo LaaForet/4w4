@@ -11,4 +11,5 @@
 
     <h2><a href="<?php the_permalink(); ?>"> <?= $titre?></a></h2>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
+    
 </article>

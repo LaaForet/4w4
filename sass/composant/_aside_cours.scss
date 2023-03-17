@@ -4,14 +4,10 @@
         flex-direction: column;
         @media (min-width: 1030px) {
             flex-direction: row;
-
         }
+
         .menu-item {
             a {
-                
-                code {
-
-                }
 
                 p {
                     display: none;
@@ -19,7 +15,6 @@
                         display: block;
                     }
                 }
-
             }
         }
     }

@@ -1,13 +1,13 @@
 
+//Gestion du menu aside
+
 .site__aside {
   grid-area: aside;
-  // border-top: 1px solid #fff5db;
   background: linear-gradient($coul-jaune, transparent);
   border-radius: 100px 100px 0 0;
   padding: 1rem;
   text-align: center;
   
-
   .menu {
     list-style-type: none;
     padding: 0;
