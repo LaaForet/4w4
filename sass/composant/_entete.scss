@@ -128,10 +128,11 @@
 
                 .recherche__input {
                     flex-grow: 1;
+                    width: 13rem;
                     border: 0;
                     padding: 1rem;
                     background-color: transparent;
-                    color: rgb(133, 133, 133);
+                    color: $coul-mon-gris;
                     position: absolute;
                     top: 0;
                     bottom: 0;

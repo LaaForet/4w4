@@ -23,8 +23,23 @@ main{
             flex-direction: column;
 
             h2,
-            p{
+            h5,
+            p {
                 text-align: center;
+            }
+
+            h5 {
+                margin: 0;
+                color: $coul-mon-gris;
+            }
+
+            h6 {
+                margin: 0.5rem;
+                color: $coul-mon-gris; 
+            }
+
+            p {
+                font-size: 0.8rem;
             }
         }
 

@@ -22,14 +22,16 @@
     add_action( 'after_setup_theme', 'enregistrement_nav_menu', 0 );
 
     // ******************   Modification des choix des menus "cours..." *********************************
-    function perso_menu_item_title($title, $item, $args) {
+    function perso_menu_item_title($title, $args) {
         // Remplacer 'cours' par l'identifiant de votre menu
         if($args->menu == 'coursa1' || 'coursa2' || 'coursa3') {
             // Modifier la longueur du titre en fonction de vos besoins
-            //$sigle = substr($title, 0, 7);
-            //$tite = substr($title, 7);
-            //$title = "<code>" .$sigle . "</code>" . "<p>" .  wp_trim_words($title, 4, ' ... ') . "</p>";
-            $title = wp_trim_words($title, 4, ' ... '); // On garde 3 mots pours le titre du choix
+            if(substr($title, 0, 3) === '582'){
+                $title = substr($title, 4);
+                $title = wp_trim_words($title, 3, ' ... '); // On garde 3 mots pours le titre du choix
+                return $title;
+            }
+            
         }
         return $title;
     }

@@ -522,6 +522,7 @@ body main {
 }
 .site__entete .site__entete__nav .recherche label .recherche__input {
   flex-grow: 1;
+  width: 13rem;
   border: 0;
   padding: 1rem;
   background-color: transparent;
@@ -688,8 +689,20 @@ main .blocflex article {
   flex-direction: column;
 }
 main .blocflex article h2,
+main .blocflex article h5,
 main .blocflex article p {
   text-align: center;
+}
+main .blocflex article h5 {
+  margin: 0;
+  color: rgb(133, 133, 133);
+}
+main .blocflex article h6 {
+  margin: 0.5rem;
+  color: rgb(133, 133, 133);
+}
+main .blocflex article p {
+  font-size: 0.8rem;
 }
 main .blocflex .blocFlex__galerie {
   width: 100%;
