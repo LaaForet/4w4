@@ -26,7 +26,7 @@
         // Remplacer 'cours' par l'identifiant de votre menu
         if($args->menu == 'coursa1' || 'coursa2' || 'coursa3') {
             // Modifier la longueur du titre en fonction de vos besoins
-            if(substr($title, 0, 3) === '582'){
+            if(substr($title, 0, 3) === '582' || substr($title, 4, 3) === '5N1' || substr($title, 4, 3) === '5E1'){
                 $title = substr($title, 4);
                 $title = wp_trim_words($title, 3, ' ... '); // On garde 3 mots pours le titre du choix
                 return $title;
