@@ -63,9 +63,9 @@
      */
     function cidweb_modifie_requete_principal( $query ) {
         if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
-        $query->set( 'category_name', 'notes' );
-        $query->set( 'orderby', 'title' );
-        $query->set( 'order', 'ASC' );
+            $query->set( 'category_name', 'notes' );
+            $query->set( 'orderby', 'title' );
+            $query->set( 'order', 'ASC' );
         }
         }
         add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
