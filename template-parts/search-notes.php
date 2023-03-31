@@ -1,3 +1,5 @@
+<h1>JE SUIS EN LIEN AVEC LES COURS</h1>
+
 <?php
 
     if (have_posts()) :

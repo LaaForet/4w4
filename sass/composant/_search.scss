@@ -1,0 +1,16 @@
+
+.site__recherche {
+
+    h1 {
+        grid-area: sigle;
+    }
+
+    p {
+        grid-area: description;
+    }
+
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "sigle description";
+}
