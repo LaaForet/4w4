@@ -5,24 +5,29 @@
 
     <section class="site__footer__nav">
         <h2>Liens rapides</h2>
-        
-        <?php 
-            wp_nav_menu(array(
-                'menu' => 'entete', 
-                'container' => 'nav'
-                ))
-        ?>
+        <div class="sidebar">
+            <?php dynamic_sidebar( 'footer_articles' ); ?>
+        </div>
+        <!-- <?php 
+            // wp_nav_menu(array(
+            //     'menu' => 'entete', 
+            //     'container' => 'nav'
+            //     ))
+        ?> -->
     </section>
     
     <section class="site__footer__medias">
         <h2>Suivez-nous !</h2>
-        <div class="footer_liens_sociaux">
+        <div class="sidebar">
             <?php dynamic_sidebar( 'footer_liens_sociaux' ); ?>
         </div>
-        <i class="fa-brands fa-facebook"></i>
+        <div class="sidebar">
+            <?php dynamic_sidebar( 'footer_commentaires' ); ?>
+        </div>
+        <!-- <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-linkedin"></i> -->
     </section>
 
 </footer>
