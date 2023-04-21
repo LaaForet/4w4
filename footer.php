@@ -5,6 +5,7 @@
 
     <section class="site__footer__nav">
         <h2>Liens rapides</h2>
+        
         <?php 
             wp_nav_menu(array(
                 'menu' => 'entete', 
@@ -15,6 +16,9 @@
     
     <section class="site__footer__medias">
         <h2>Suivez-nous !</h2>
+        <div class="footer_liens_sociaux">
+            <?php dynamic_sidebar( 'footer_liens_sociaux' ); ?>
+        </div>
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-github"></i>

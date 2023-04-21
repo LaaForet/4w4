@@ -70,4 +70,18 @@
         }
         add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
 
+    // Enregistrer le sidebar
+    function enregistrer_sidebar() {
+        register_sidebar( array(
+            'name' => __( 'footer_liens_sociaux', 'clara-2023' ),
+            'id' => 'footer_liens_sociaux',
+            'description' => __( 'Une zone pour afficher des widgets dans la sidebar.', 'clara-2023' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2 class="widget-title">',
+            'after_title' => '</h2>',
+        ) );
+}
+add_action( 'widgets_init', 'enregistrer_sidebar' );
+
 ?>
