@@ -6,7 +6,7 @@
     display: block;
     font-size: 2rem;
     padding: 0.5rem;
-    color: $coul-bleue;
+    color: $coul-secondaire;
     cursor: pointer;
 }
 
@@ -17,12 +17,12 @@
 // Pour gérer l'ouverture / fermeture du menu en mode mobile
 #cc-menu:checked ~ .menu-entete-container .menu {
     transform: translateY(0);
-    background-color: $coul-jaune;
+    background-color: $coul-principale;
     width: calc(100% + 1rem);
 }
 
 #cc-menu:checked ~ .logo-menu {
-    color: $coul-bleue;
+    color: $coul-secondaire;
 }
 
 .site__entete {
@@ -33,7 +33,7 @@
         grid-template-areas: 
             "logo menu-burger recherche"
             "menu menu menu";
-        background-color: $coul-jaune;
+        background-color: $coul-principale;
         padding-left: 1rem;
 
         img {
@@ -82,7 +82,7 @@
                     a::before {
                         content: '';
                         position: absolute;
-                        background-color: $coul-bleue;
+                        background-color: $coul-secondaire;
                         width: 100%;
                         height: 10px;
                         top: 130%;
@@ -113,7 +113,7 @@
             padding: 0 0.5rem;
 
             label {
-                border: 2px solid $coul-bleue;
+                border: 2px solid $coul-secondaire;
                 border-radius: 50px;
                 height: 1.5rem;
                 width: 1.5rem;
@@ -130,7 +130,7 @@
                     border: 0;
                     padding: 1rem;
                     background-color: transparent;
-                    color: $coul-mon-gris;
+                    color: $coul-texte;
                     position: absolute;
                     top: 0;
                     bottom: 0;
@@ -147,7 +147,7 @@
                     cursor: pointer;
                     border: 0;
                     background-color: transparent;
-                    color: $coul-bleue;
+                    color: $coul-secondaire;
                     border-radius: 50%;
                     width: 1.5rem;
                     height: 1.5rem;
@@ -165,8 +165,8 @@
                     }
 
                     .recherche__bouton {
-                        background-color: $coul-bleue;
-                        color: $coul-jaune;
+                        background-color: $coul-secondaire;
+                        color: $coul-principale;
                     }
                 }
             }
@@ -184,7 +184,7 @@
             justify-content: space-between;
             align-items: center;
             flex-direction: row;
-            border-bottom: 15px solid $coul-bleue;
+            border-bottom: 15px solid $coul-secondaire;
 
             .menu-entete-container {
                 flex: 1;
@@ -199,12 +199,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: $coul-jaune;
+        background-color: $coul-principale;
         padding-bottom: 1rem;
         margin-bottom: 1rem;
         
         h1, h2 {
             margin: 1rem 0 0 0;
+            color: $coul-texte;
         }
     }
 }
