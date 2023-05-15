@@ -11,7 +11,7 @@ main{
     
         article{
             width: 18rem;
-            background-color: $coul-fond-articles;
+            background-color: var(coul-fond-articles);
             box-shadow: (#799ea5ae) 0px 5px 15px;
             color: $coul-texte;
             padding: 1rem;

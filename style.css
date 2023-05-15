@@ -320,6 +320,8 @@ template {
   display: none;
 }
 
+/* Couleurs utilisées dans l'ensemble des styles */
+/* Couleurs mode sombre */
 li::marker {
   color: white;
 }
@@ -509,7 +511,7 @@ body main {
   padding: 0 0.5rem;
 }
 .site__entete .site__entete__nav .recherche label {
-  border: 2px solid #181D31;
+  border: 2px solid var(coul-secondaire);
   border-radius: 50px;
   height: 1.5rem;
   width: 1.5rem;

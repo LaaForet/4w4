@@ -1,0 +1,26 @@
+{
+  "name": "clara-2023",
+  "version": "1.0.0",
+  "description": "<!-- Les # représentent les h1, h2... -->\r # LAB5\r ## 4w4 - Conception d'interfaces et développement web\r ### Auteur - Clara Champagne-Laforest\r #### Description\r <!-- pour faire une liste on met un tiret -->\r - Site web conçu à l'aide de word press\r - Regroupe les informations reliées aux différent cours donnés au TIM\r - Rassemble les notes de cours du cours 4W4 au TIM\r - Déploiement du site sur SiteGround\r - Ajout de widgets dans le pied de page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass sass/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaaForet/4w4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaaForet/4w4/issues"
+  },
+  "homepage": "https://github.com/LaaForet/4w4#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}
