@@ -2,7 +2,13 @@
 
 <article class="blocFlex__galerie">
     
-    <?php the_content(); ?>
+    <?php 
+        $titreGalerie = 'galerie-claire'; 
+        if (get_the_title() === $titreGalerie) {
+            the_content();
+        }
+    
+    ?>
     <p><?php the_field('description'); ?></p>
 
 </article>

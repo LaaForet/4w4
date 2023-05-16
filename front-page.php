@@ -20,13 +20,22 @@
             // ":" + "endif" remplacent "{}"
             if (have_posts()) :
                 while (have_posts()) : the_post(); 
+
+                    $modeSombre = isset($_COOKIE['themeSombre']) ? $_COOKIE['themeSombre'] : '';
                 
-                    $la_categorie = 'notes';
+                    $article = 'notes';
                     if(in_category('galerie')) {
-                        $la_categorie = 'galerie';
+
+                        $titreGalerie = get_the_title();
+
+                        if ($modeSombre === 'true' && $titreGalerie === 'galerie-sombre') {
+                            $article = 'galerie-sombre';
+                        } else if ($modeSombre === 'false' && $titreGalerie === 'galerie-claire') {
+                            $article = 'galerie-claire';
+                        }
                     };
 
-                    get_template_part('template-parts/categorie', $la_categorie);
+                    get_template_part('template-parts/categorie', $article);
 
                 endwhile;
                 
