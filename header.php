@@ -12,28 +12,27 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var modeSombre = false;
+            modeSombre = JSON.parse(localStorage.getItem('themeSombre'));
             var bouton = document.getElementById('btn-toggle-theme');
+            changerTheme()
 
-            addEventListener('click', function(event) {
+            bouton.addEventListener('click', function(event) {
                 modeSombre = !modeSombre;
+                changerTheme()
+                localStorage.setItem('themeSombre', JSON.stringify(modeSombre));   
+            });
 
+            function changerTheme(){
                 if (modeSombre) {
-                        //console.log('mode sombre');
-                        //document.documentElement.classList.remove('clair');
-                        //document.documentElement.classList.add('sombre');
+                document.body.classList.add('sombre');
+                document.body.classList.remove('clair');
+            } else {
+                document.body.classList.remove('sombre');
+                document.body.classList.add('clair');
+            }
+            }
 
-                        document.body.classList.add('sombre');
-                        document.body.classList.remove('clair');
-                    } else {
-                        //console.log('mode clair');
-                        //document.documentElement.classList.remove('sombre');
-                        //document.documentElement.classList.add('clair');
-
-                        document.body.classList.remove('sombre');
-                        document.body.classList.add('clair');
-                    }
-                    
-            })
+            
         });
     </script>
 
