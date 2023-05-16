@@ -11,9 +11,9 @@ main{
     
         article{
             width: 18rem;
-            background-color: var(coul-fond-articles);
+            background-color: var(--coul-fond-articles);
             box-shadow: (#799ea5ae) 0px 5px 15px;
-            color: $coul-texte;
+            color: var(--coul-texte);
             padding: 1rem;
             border-radius: 20px;
             display: flex;
@@ -28,12 +28,12 @@ main{
 
             h5 {
                 margin: 0;
-                color: $coul-texte;
+                color: var(--coul-texte);
             }
 
             h6 {
                 margin: 0.5rem;
-                color: $coul-texte; 
+                color: var(--coul-texte); 
             }
 
             p {

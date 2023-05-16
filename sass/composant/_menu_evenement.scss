@@ -22,7 +22,7 @@
             }
 
             span {
-                background-color: var(coul-fond-articles);
+                background-color: var(--coul-fond-articles);
                 width: 150px;
                 padding: 0.5rem;
                 box-sizing: border-box;  
@@ -41,7 +41,7 @@
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    background-color: var(coul-fond-articles);
+                    background-color: var(--coul-fond-articles);
                     transform-origin: bottom;
                     transform: scaleY(1);
                     transition: transform 0.3s ease-in-out;

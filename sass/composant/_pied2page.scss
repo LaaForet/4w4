@@ -1,5 +1,5 @@
 .site__footer {
-    background-color: var(coul-principale);
+    background-color: var(--coul-principale);
     padding: 1rem;
     margin-top: 2rem;
     display: grid;
@@ -59,7 +59,7 @@
         grid-area: medias;
         
         i {
-            color: var(coul-secondaire);
+            color: var(--coul-secondaire);
             cursor: pointer;
             padding: 0.5rem;
             transition: 0.3s;
@@ -70,7 +70,7 @@
         }
 
         i:hover {
-            color: var(coul-hover);
+            color: var(--coul-hover);
         }
 
         @media (min-width: $largeur__tablette) {

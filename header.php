@@ -10,22 +10,27 @@
 
     <!-- Pour gérer les changement de couleur (mode sombre/clair) -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener('DOMContentLoaded', function() {
             var modeSombre = false;
             var bouton = document.getElementById('btn-toggle-theme');
-            var body = document.body;
 
-            addEventListener("click", function(event) {
+            addEventListener('click', function(event) {
                 modeSombre = !modeSombre;
 
                 if (modeSombre) {
-                        console.log('mode sombre');
-                        body.classList.add("sombre");
-                        body.classList.remove("clair");
+                        //console.log('mode sombre');
+                        //document.documentElement.classList.remove('clair');
+                        //document.documentElement.classList.add('sombre');
+
+                        document.body.classList.add('sombre');
+                        document.body.classList.remove('clair');
                     } else {
-                        console.log('mode clair');
-                        body.classList.remove("sombre");
-                        body.classList.add("clair");
+                        //console.log('mode clair');
+                        //document.documentElement.classList.remove('sombre');
+                        //document.documentElement.classList.add('clair');
+
+                        document.body.classList.remove('sombre');
+                        document.body.classList.add('clair');
                     }
                     
             })

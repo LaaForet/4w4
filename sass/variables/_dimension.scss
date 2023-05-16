@@ -4,22 +4,3 @@
 $largeur__bureau : 1080px;
 $largeur__tablette : 820px;
 
-.clair{
-    /* Couleurs mode clair */
-    --coul-degrade: linear-gradient(#a1d0d9, #fff5db);
-    --coul-hover: #7ca2a9;
-    --coul-principale: #fff5db;
-    --coul-secondaire: #a1d0d9;
-    --coul-texte: rgb(133, 133, 133);
-    --coul-fond-articles: #ffffff;
-}
-
-.sombre{
-    /* Couleurs mode sombre */
-    --coul-degrade: linear-gradient(#181D31, #003F5C);
-    --coul-hover: #fff5db;
-    --coul-principale: #003F5C;
-    --coul-secondaire: #181D31;
-    --coul-texte: #ffffff;
-    --coul-fond-articles: #000124;
-}

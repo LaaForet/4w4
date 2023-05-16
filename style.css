@@ -11,6 +11,43 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: clara-2023
 */
+/*
+:root,
+:root.sombre {
+    --coul-degrade: linear-gradient(#181D31, #003F5C);
+    --coul-hover: #fff5db;
+    --coul-principale: #003F5C;
+    --coul-secondaire: #181D31;
+    --coul-texte: #ffffff;
+    --coul-fond-articles: #000124;
+}
+:root.clair {
+    --coul-degrade: linear-gradient(#a1d0d9, #fff5db);
+    --coul-hover: #7ca2a9;
+    --coul-principale: #fff5db;
+    --coul-secondaire: #a1d0d9;
+    --coul-texte: rgb(133, 133, 133);
+    --coul-fond-articles: #ffffff;
+}
+*/
+:root {
+  --coul-degrade: linear-gradient(#a1d0d9, #fff5db);
+  --coul-hover: #7ca2a9;
+  --coul-principale: #fff5db;
+  --coul-secondaire: #a1d0d9;
+  --coul-texte: rgb(133, 133, 133);
+  --coul-fond-articles: #ffffff;
+}
+
+body.sombre {
+  --coul-degrade: linear-gradient(#181D31, #003F5C);
+  --coul-hover: #fff5db;
+  --coul-principale: #003F5C;
+  --coul-secondaire: #181D31;
+  --coul-texte: #ffffff;
+  --coul-fond-articles: #000124;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -320,8 +357,6 @@ template {
   display: none;
 }
 
-/* Couleurs utilisées dans l'ensemble des styles */
-/* Couleurs mode sombre */
 li::marker {
   color: white;
 }
@@ -393,17 +428,17 @@ p {
 }
 
 a {
-  color: #ffffff;
+  color: var(--coul-texte);
 }
 a:visited {
-  color: #ffffff;
+  color: var(--coul-texte);
 }
 a:hover {
-  color: #fff5db;
+  color: var(--coul-hover);
 }
 
 body {
-  background: linear-gradient(#181D31, #003F5C);
+  background: var(--coul-degrade);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -417,7 +452,7 @@ body main {
   display: block;
   font-size: 2rem;
   padding: 0.5rem;
-  color: #181D31;
+  color: var(--coul-secondaire);
   cursor: pointer;
 }
 
@@ -427,19 +462,19 @@ body main {
 
 #cc-menu:checked ~ .menu-entete-container .menu {
   transform: translateY(0);
-  background-color: #003F5C;
+  background-color: var(--coul-principale);
   width: calc(100% + 1rem);
 }
 
 #cc-menu:checked ~ .logo-menu {
-  color: #181D31;
+  color: var(--coul-secondaire);
 }
 
 .site__entete .site__entete__nav {
   display: grid;
   grid-template-columns: auto auto 1fr;
   grid-template-areas: "logo menu-burger recherche" "menu menu menu";
-  background-color: #003F5C;
+  background-color: var(--coul-principale);
   padding-left: 1rem;
 }
 .site__entete .site__entete__nav img {
@@ -485,7 +520,7 @@ body main {
   .site__entete .site__entete__nav .menu-entete-container .menu a::before {
     content: "";
     position: absolute;
-    background-color: #181D31;
+    background-color: var(--coul-secondaire);
     width: 100%;
     height: 10px;
     top: 130%;
@@ -511,7 +546,7 @@ body main {
   padding: 0 0.5rem;
 }
 .site__entete .site__entete__nav .recherche label {
-  border: 2px solid var(coul-secondaire);
+  border: 2px solid var(--coul-secondaire);
   border-radius: 50px;
   height: 1.5rem;
   width: 1.5rem;
@@ -528,7 +563,7 @@ body main {
   border: 0;
   padding: 1rem;
   background-color: transparent;
-  color: #ffffff;
+  color: var(--coul-texte);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -543,7 +578,7 @@ body main {
   cursor: pointer;
   border: 0;
   background-color: transparent;
-  color: #181D31;
+  color: var(--coul-secondaire);
   border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
@@ -559,8 +594,8 @@ body main {
   cursor: initial;
 }
 .site__entete .site__entete__nav .recherche label:focus-within .recherche__bouton {
-  background-color: #181D31;
-  color: #003F5C;
+  background-color: var(--coul-secondaire);
+  color: var(--coul-principale);
 }
 @media (min-width: 820px) {
   .site__entete .site__entete__nav {
@@ -574,7 +609,7 @@ body main {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    border-bottom: 15px solid #181D31;
+    border-bottom: 15px solid var(--coul-secondaire);
   }
   .site__entete .site__entete__nav .menu-entete-container {
     flex: 1;
@@ -585,13 +620,13 @@ body main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #003F5C;
+  background-color: var(--coul-principale);
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
 .site__entete .site__entete__titre h1, .site__entete .site__entete__titre h2 {
   margin: 1rem 0 0 0;
-  color: #ffffff;
+  color: var(--coul-texte);
 }
 
 @media (min-width: 820px) {
@@ -600,7 +635,7 @@ body main {
   }
 }
 .site__footer {
-  background-color: #003F5C;
+  background-color: var(--coul-principale);
   padding: 1rem;
   margin-top: 2rem;
   display: grid;
@@ -650,7 +685,7 @@ body main {
   grid-area: medias;
 }
 .site__footer .site__footer__medias i {
-  color: #181D31;
+  color: var(--coul-secondaire);
   cursor: pointer;
   padding: 0.5rem;
   transition: 0.3s;
@@ -661,7 +696,7 @@ body main {
   }
 }
 .site__footer .site__footer__medias i:hover {
-  color: #fff5db;
+  color: var(--coul-hover);
 }
 @media (min-width: 820px) {
   .site__footer .site__footer__medias h2 {
@@ -683,9 +718,9 @@ main .blocflex {
 }
 main .blocflex article {
   width: 18rem;
-  background-color: #000124;
+  background-color: var(--coul-fond-articles);
   box-shadow: rgba(121, 158, 165, 0.6823529412) 0px 5px 15px;
-  color: #ffffff;
+  color: var(--coul-texte);
   padding: 1rem;
   border-radius: 20px;
   display: flex;
@@ -699,11 +734,11 @@ main .blocflex article p {
 }
 main .blocflex article h5 {
   margin: 0;
-  color: #ffffff;
+  color: var(--coul-texte);
 }
 main .blocflex article h6 {
   margin: 0.5rem;
-  color: #ffffff;
+  color: var(--coul-texte);
 }
 main .blocflex article p {
   font-size: 0.8rem;
@@ -754,7 +789,7 @@ main .blocflex .blocFlex__galerie img {
   transform: scaleY(2);
 }
 .menu-evenement-container .menu a span {
-  background-color: #000124;
+  background-color: var(--coul-fond-articles);
   width: 150px;
   padding: 0.5rem;
   box-sizing: border-box;
@@ -772,7 +807,7 @@ main .blocflex .blocFlex__galerie img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000124;
+  background-color: var(--coul-fond-articles);
   transform-origin: bottom;
   transform: scaleY(1);
   transition: transform 0.3s ease-in-out;
@@ -794,7 +829,7 @@ main .blocflex .blocFlex__galerie img {
 /* --------------------------------------------- layout */
 .site__aside {
   grid-area: aside;
-  background: linear-gradient(#003F5C, transparent);
+  background: linear-gradient(var(coul-principale), transparent);
   border-radius: 100px 100px 0 0;
   padding: 1rem;
   text-align: center;
@@ -811,7 +846,7 @@ main .blocflex .blocFlex__galerie img {
 }
 @media (min-width: 1080px) {
   .site__aside {
-    background: linear-gradient(#fff5db 80%, transparent);
+    background: linear-gradient(var(coul-hover) 80%, transparent);
     border-radius: 0 100px 0 0;
     text-align: left;
   }

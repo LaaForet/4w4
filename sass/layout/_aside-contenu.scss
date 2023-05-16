@@ -3,7 +3,7 @@
 
 .site__aside {
   grid-area: aside;
-  background: linear-gradient($coul-principale, transparent);
+  background: linear-gradient(var(coul-principale), transparent);
   border-radius: 100px 100px 0 0;
   padding: 1rem;
   text-align: center;
@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $largeur__bureau) {
-    background: linear-gradient($coul-hover 80%, transparent);
+    background: linear-gradient(var(coul-hover) 80%, transparent);
     border-radius: 0 100px 0 0;
     text-align: left;
 
