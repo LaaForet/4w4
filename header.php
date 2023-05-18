@@ -18,11 +18,12 @@
 
             bouton.addEventListener('click', function(event) {
                 modeSombre = !modeSombre;
-                changerTheme()
+                changerTheme();
+                changerGalerie();
                 localStorage.setItem('themeSombre', JSON.stringify(modeSombre));   
             });
 
-            function changerTheme(){
+            function changerTheme() {
                 if (modeSombre) {
                     document.body.classList.add('sombre');
                     document.body.classList.remove('clair');
@@ -32,6 +33,19 @@
                     document.body.classList.add('clair');
                     bouton.innerHTML = '<i class="fa-solid fa-moon"></i>';
                 }  
+            }
+
+            function changerGalerie() {
+                console.log('fonction changerGalerie');
+                if (modeSombre) {
+                    document.querySelector('.galerie-sombre').style.display = "block";
+                    document.querySelector('.galerie-claire').style.display = "none";  
+                    console.log('mode sombre/galerie sombre');
+                } else {
+                    document.querySelector('.galerie-claire').style.display = "block";
+                    document.querySelector('.galerie-sombre').style.display = "none";
+                    console.log('mode clair/galerie clair');
+                }
             }
             
         });
