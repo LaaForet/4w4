@@ -14,7 +14,8 @@
             var modeSombre = false;
             modeSombre = JSON.parse(localStorage.getItem('themeSombre'));
             var bouton = document.getElementById('btn-toggle-theme');
-            changerTheme()
+            changerTheme();
+            changerGalerie();
 
             bouton.addEventListener('click', function(event) {
                 modeSombre = !modeSombre;

@@ -21,7 +21,7 @@
             <?php get_template_part('template-parts/categorie', 'galerie-sombre'); ?>
         </div>
 
-        <div class="galerie galerie-claire" style="display:block">
+        <div class="galerie galerie-claire" style="display:none">
             <?php get_template_part('template-parts/categorie', 'galerie-claire'); ?>
         </div>
 
