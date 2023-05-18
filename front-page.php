@@ -20,24 +20,40 @@
             // ":" + "endif" remplacent "{}"
             if (have_posts()) :
                 while (have_posts()) : the_post(); 
-
-                    $modeSombre = isset($_COOKIE['themeSombre']) ? $_COOKIE['themeSombre'] : '';
-                
                     $article = 'notes';
                     if(in_category('galerie')) {
-
                         $titreGalerie = get_the_title();
+        ?>
+                    <!-- <div class="galerie galerie-sombre" style="display:none">
+                        <?php get_template_part('template-parts/categorie', 'galerie-sombre'); ?>
+                    </div>
+                    <div class="galerie galerie-claire" style="display:none">
+                        <?php get_template_part('template-parts/categorie', 'galerie-claire'); ?>
+                    </div>
 
-                        if ($modeSombre === 'true' && $titreGalerie === 'galerie-sombre') {
-                            $article = 'galerie-sombre';
-                        } else if ($modeSombre === 'false' && $titreGalerie === 'galerie-claire') {
-                            $article = 'galerie-claire';
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                        let modeSombre = JSON.parse(localStorage.getItem('themeSombre'));
+                        if (modeSombre) {
+                            if ('<?php echo $titreGalerie; ?>' === 'galerie-sombre') {
+                                document.querySelector('.galerie-sombre').style.display = "block";
+                            }
+                        } else {
+                            if ('<?php echo $titreGalerie; ?>' === 'galerie-claire') {
+                                document.querySelector('.galerie-claire').style.display = "block";
+                            }
                         }
-                    };
+                        });
+                    </script> -->
+        <?php
+                       
+                    }else{
+                        get_template_part('template-parts/categorie', $article);
+                    }
 
-                    get_template_part('template-parts/categorie', $article);
 
                 endwhile;
+                
                 
             endif;
         ?>
@@ -46,3 +62,5 @@
 </main>
 
 <?php get_footer(); ?>
+
+

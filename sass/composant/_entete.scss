@@ -8,6 +8,11 @@
     padding: 0.5rem;
     color: var(--coul-secondaire);
     cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        color: var(--coul-hover);
+    }
 }
 
 #cc-menu {
@@ -40,6 +45,26 @@
             grid-area: logo;
             width: 3rem;
             height: 3rem;
+        }
+
+        #btn-toggle-theme {
+            background-color: transparent;
+            border: 2px solid var(--coul-secondaire);
+            border-radius: 100px;
+            color: var(--coul-secondaire);
+            width: 2.3rem;
+            height: 2.3rem;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: var(--coul-secondaire);
+                color: var(--coul-principale);
+            }
+
+            @media (min-width: $largeur__tablette) {
+                margin-right: 1rem;
+            }
         }
 
         .menu-entete-container {

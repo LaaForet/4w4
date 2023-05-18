@@ -24,14 +24,15 @@
 
             function changerTheme(){
                 if (modeSombre) {
-                document.body.classList.add('sombre');
-                document.body.classList.remove('clair');
-            } else {
-                document.body.classList.remove('sombre');
-                document.body.classList.add('clair');
+                    document.body.classList.add('sombre');
+                    document.body.classList.remove('clair');
+                    bouton.innerHTML = '<i class="fa-solid fa-sun"></i>';
+                } else {
+                    document.body.classList.remove('sombre');
+                    document.body.classList.add('clair');
+                    bouton.innerHTML = '<i class="fa-solid fa-moon"></i>';
+                }  
             }
-            }
-
             
         });
     </script>
@@ -53,7 +54,7 @@
                 ))
             ?>
             <?php get_search_form(); ?>
-            <button id="btn-toggle-theme">Change Colors</button>
+            <button id="btn-toggle-theme"><i class="fa-solid fa-moon"></i></button>
         </section>
 
         <section class="site__entete__titre">

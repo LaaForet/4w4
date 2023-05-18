@@ -1,7 +1,7 @@
 <!-- template part pour afficher la galerie dans la page d'accueil -->
 
 <article class="blocFlex__galerie">
-    
+<script>console.log('GALERIE SOMBRE')</script>
     <?php 
 
         $titreGalerie = 'galerie-sombre'; 
