@@ -1,6 +1,7 @@
 <!-- template part pour afficher la galerie dans la page d'accueil -->
 
 <article class="blocFlex__galerie">
+    
     <?php
         $args = array(
             'name'        => 'galerie-claire',
@@ -15,5 +16,5 @@
     ?>
 
     <p><?php the_field('description'); ?></p>
-    
+
 </article>
