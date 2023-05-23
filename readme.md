@@ -1,15 +1,14 @@
 <!-- Les # représentent les h1, h2... -->
-# TP@
+# ÉPREUVE FINALE
 ## 4w4 - Conception d'interfaces et développement web
 ### Auteur - Clara Champagne-Laforest
 #### Description
 <!-- pour faire une liste on met un tiret -->
-- Le principal changement est le mode jour/nuit
-- Une nouvelle galerie d'images s'affiche dans le mode nuit
-- Ajout et styles du bouton pour changer de mode
-- Le carrousel garde les proportion des image
-- Le carrousel n'est fonctionnel que dans le mode sombre
-- Ajout des événements dans la page d'accueil
+- Ajout d'un menu des ateliers du TIM
+- Affichage du menu sur la page d'accueil
+- Styliser le menu
+- Creation d'un template pour afficher les ateliers du TIM
+- Affichage des champs personnalisés définis dans WordPress
 
 ### Références
 - Profil github : https://github.com/LaaForet
