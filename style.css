@@ -875,6 +875,24 @@ main .blocflex .blocFlex__galerie img {
   background-color: var(--coul-principale);
 }
 
+.acf__atelier div {
+  display: flex;
+  gap: 0.3rem;
+  max-width: 30rem;
+}
+.acf__atelier div p {
+  padding: 0.5rem;
+}
+.acf__atelier div .acf_titre {
+  background-color: var(--coul-principale);
+  width: 100%;
+  font-weight: bold;
+}
+.acf__atelier div .acf_contenu {
+  background-color: var(--coul-fond-articles);
+  width: 100%;
+}
+
 /* --------------------------------------------- layout */
 .site__aside {
   grid-area: aside;

@@ -1,0 +1,23 @@
+.acf__atelier {
+    div {
+        display: flex;
+        gap: 0.3rem;
+        max-width: 30rem;
+
+        p {
+            padding: 0.5rem;
+        }
+
+        .acf_titre {
+            background-color: var(--coul-principale);
+            width: 100%;
+            font-weight: bold;
+        }
+    
+        .acf_contenu {
+            background-color: var(--coul-fond-articles);
+            width: 100%;
+        }
+    }
+    
+}
