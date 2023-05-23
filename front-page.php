@@ -6,10 +6,16 @@
 <main>
     <!-- <h3>front-page.php</h3> -->
    
-
     <section class="blocflex">
         <?php
-            get_template_part('template-parts/atelier');
+            wp_nav_menu(array(
+                "menu" => "atelier",
+                "container" => "nav"
+            ));
+        ?>
+    </section>
+    <section class="blocflex">
+        <?php
             wp_nav_menu(array(
                 "menu" => "evenement",
                 "container" => "nav"
