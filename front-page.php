@@ -5,9 +5,11 @@
 
 <main>
     <!-- <h3>front-page.php</h3> -->
+   
 
     <section class="blocflex">
         <?php
+            get_template_part('template-parts/atelier');
             wp_nav_menu(array(
                 "menu" => "evenement",
                 "container" => "nav"
