@@ -75,6 +75,7 @@
         <section class="site__entete__titre">
             <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
             <h2><?= bloginfo('description') ?></h2>
+            <a href="https://github.com/LaaForet/4w4/tree/epreuve-finale">Lien vers dépot GitHub (branche epreuve-finale)</a>
         </section>
 
     </header>
